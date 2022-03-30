@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app6.views import app6_mouni
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('app6_mouni/',app6_mouni,name='app6_mouni'),
 ]
